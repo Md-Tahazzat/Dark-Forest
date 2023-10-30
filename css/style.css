@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: start;
+}
+
+#navbar {
+  width: 10%;
+  height: 100vh;
+  background: #bebef4;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+#navbar .logo {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navbar .logo img {
+  width: 100px;
+  margin-top: 10px;
+}
+#navbar ul {
+  display: block;
+}
+#navbar ul .links {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  list-style-type: none;
+}
+
+#main {
+  width: 90vw;
+}
+#main .banner {
+  background-color: rgb(178, 219, 178);
+  height: 60vh;
+  margin-bottom: 15vh;
+}
+#main .banner h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+#main .section-panel {
+  width: 100%;
+  margin-bottom: 20vh;
+}
+#main .section-panel .animal-name {
+  font-size: 3vw;
+  height: 40px;
+  text-align: center;
+  margin-bottom: 10vh;
+}
+#main .section-panel .animal-description {
+  display: flex;
+  justify-content: space-between;
+  gap: 30vw;
+  width: 100%;
+  height: 30vw;
+  margin-bottom: 20vh;
+}
+#main .section-panel .animal-description p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#main .section-panel .animal-details {
+  width: 100%;
+  display: flex;
+  align-items: start;
+}
+#main .section-panel .animal-details .left {
+  width: 50%;
+  font-size: 1.4rem;
+  padding: 2vw;
+}
+#main .section-panel .animal-details .left h1 {
+  margin-bottom: 1.4vh;
+  font-weight: 700;
+}
+#main .section-panel .animal-details .left ul li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+#main .section-panel .animal-details .right {
+  position: sticky;
+  top: 0;
+  width: 50%;
+  font-size: 3rem;
+  background: coral;
+}
+#main .section-panel .animal-details .right .img-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#main .section-panel .animal-details .right .img-container .animated-img {
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  border-radius: 15px;
+  top: calc(50vh - 15vw);
+  right: 8.5vw;
+}/*# sourceMappingURL=style.css.map */

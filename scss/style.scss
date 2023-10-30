@@ -1,0 +1,133 @@
+// color variables
+$primary-200: #dcdcec;
+$primary-400: #bebef4;
+$secondary-500: #44f404;
+$white: white;
+$black: black;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: start;
+  // background: rgb(236, 240, 244);
+}
+
+#navbar {
+  width: 10%;
+  height: 100vh;
+  background: $primary-400;
+  position: sticky;
+  top: 0;
+  left: 0;
+  .logo {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100px;
+      margin-top: 10px;
+    }
+  }
+  ul {
+    display: block;
+    .links {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      margin-left: 20px;
+      list-style-type: none;
+    }
+  }
+}
+
+#main {
+  width: 90vw;
+  // banner section
+  .banner {
+    background-color: rgb(178, 219, 178);
+    height: 60vh;
+    margin-bottom: 15vh;
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+    }
+  }
+
+  // section default style for all section.
+  .section-panel {
+    width: 100%;
+    margin-bottom: 20vh;
+
+    .animal-name {
+      font-size: 3vw;
+      height: 40px;
+      text-align: center;
+      margin-bottom: 10vh;
+    }
+    .animal-description {
+      display: flex;
+      justify-content: space-between;
+      gap: 30vw;
+      width: 100%;
+      height: 30vw;
+      margin-bottom: 20vh;
+      p {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+    }
+
+    .animal-details {
+      width: 100%;
+      display: flex;
+      align-items: start;
+      .left {
+        width: 50%;
+        font-size: 1.4rem;
+        padding: 2vw;
+        h1 {
+          margin-bottom: 1.4vh;
+          font-weight: 700;
+        }
+        ul {
+          li {
+            list-style: none;
+            margin-bottom: 15px;
+          }
+        }
+      }
+      .right {
+        position: sticky;
+        top: 0;
+        width: 50%;
+        font-size: 3rem;
+        background: coral;
+        .img-container {
+          width: 100%;
+          height: 100%;
+          position: relative;
+
+          .animated-img {
+            position: absolute;
+            width: 30vw;
+            height: 30vw;
+            border-radius: 15px;
+            top: calc(50vh - 15vw);
+            right: calc(23.5vw - 15vw);
+          }
+        }
+      }
+    }
+  }
+}
